@@ -46,6 +46,9 @@ def optimize():
 
 p = optimize()
 
+# Print the linear function
+print(f"線性函數：y = {p[0]} + {p[1]} * x")
+
 # Plot the graph
 y_predicted = list(map(lambda t: p[0] + p[1] * t, x))
 print('y_predicted=', y_predicted)
